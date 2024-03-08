@@ -177,8 +177,6 @@ import ContactsProfile from "../pages/Contacts/ContactsProfile/contacts-profile"
 import DashboardPatient from "pages/Dashboard-Patient"
 
 const authProtectedRoutes = [
-  { path: "/dashboard", component: <Dashboard /> },
-  { path: "/dashboardPatient", component: <DashboardPatient /> },
   { path: "/dashboard-saas", component: <DashboardSaas /> },
   { path: "/dashboard-crypto", component: <DashboardCrypto /> },
   { path: "/blog", component: <Blog /> },
@@ -337,6 +335,8 @@ const authProtectedRoutes = [
 ]
 
 const publicRoutes = [
+  { path: "/dashboard", component: <Dashboard /> },
+  { path: "/dashboardPatient", component: <DashboardPatient /> },
   { path: "/login", component: <Login /> },
   { path: "/logout", component: <Logout /> },
   { path: "/forgot-password", component: <ForgetPwd /> },

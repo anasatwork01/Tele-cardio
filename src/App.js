@@ -43,7 +43,7 @@ const App = () => {
         {publicRoutes.map((route, idx) => (
           <Route
             path={route.path}
-            element={<NonAuthLayout>{route.component}</NonAuthLayout>}
+            element={<Layout>{route.component}</Layout>}
             key={idx}
             exact={true}
           />
